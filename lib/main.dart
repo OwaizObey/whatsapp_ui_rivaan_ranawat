@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'WhatsApp UI',
       theme: ThemeData.dark().copyWith(backgroundColor: backgroundColor),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Text('Hello World !'),
     );
   }
 }
