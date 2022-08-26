@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui_rivaan_ranawat/colors.dart';
+import 'package:whatsapp_ui_rivaan_ranawat/responsive/responsive_layout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'WhatsApp UI',
       theme: ThemeData.dark().copyWith(backgroundColor: backgroundColor),
-      home: Text('Hello World !'),
+      home: ResponsiveLayout(mobileScreenLayout: mobileScreenLayout, webScreenLayout: webScreenLayout),
     );
   }
 }
